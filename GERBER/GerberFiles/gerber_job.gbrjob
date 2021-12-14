@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-12-13T18:55:04Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.46,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "VX85_PCB v43"
+        },
+        "Owner": "Sergey Ko <bunkerways@gmail.com>",
+        "Size": {
+            "X": 41.997169,
+            "Y": 49.619469
+        }
+    }
+}
