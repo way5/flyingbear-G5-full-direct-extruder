@@ -1,9 +1,7 @@
 # FlyingBear Ghost 5: Direct Extruder
-|   |   |
+| ![WARNING](https://friconix.com/png/fi-ensuxs-warning-solid.png) | The project requires minimal operating skills with electronics, you must have a simple multimeter and soldering iron as well as to be able to use them properly. Everything you do hereinafter is at your own risk. :) |
 | --- | --- |
 | ![disclaimer](https://friconix.com/png/fi-cnsuxs-question-mark.png) | Please refer to [issues](https://github.com/way5/flyingbear-G5-full-direct-extruder/issues) :beetle: if you have any suggestion or found an error. |
-| ![WARNING](https://friconix.com/png/fi-ensuxs-warning-solid.png) | The project requires minimal operating skills with electronics, you must have a simple multimeter and soldering iron as well as to be able to use them properly. Everything you do hereinafter is at your own risk. :) |
-
 
 ## **+ Description**
 
@@ -36,8 +34,9 @@ The list of the parts you'd neet to print:
 - Nozzle
 - Y-axis Shaft Base + Pin Head
 - Z-axis Nut + Nut Cap
+- Back side cap for extruder motor insert
 
-In case if you have installed heated chamber I strongly recommend you to prevent extruder motor overheat by using heatsinks and cooling fan. I am using 30x30mm turbine that is attached to the carrige through the [extruder motor shroud](./OBJ/EXTRUDER%20MOTOR%20SHROUD.obj). See the corresponding 3d model.
+In case if you have installed heated chamber I strongly recommend you to prevent extruder motor overheat by using heatsinks and a cooling fan. I am using 30x30mm turbine that is attached to the carrige through the [extruder motor shroud](./OBJ/EXTRUDER%20MOTOR%20SHROUD.obj). See the corresponding 3d model.
 
 Your new hotend carrige would look like this:
 
@@ -53,7 +52,12 @@ You also would need to replace the standard PCB with following. You can make it 
 
 ![carrige](.IMG/C4.jpg)
 
-In addition you need to do a few more mods since home limit switches now are not reachable for the carriges. Linear bearings on the heated bed should be turned upside down and an extension pin added on y-axis carrige (see product assembly).
+You might like to use a cable chain with your new extruder, so here it is. See [cable chain 1](OBJ/CABLE%20CHAIN%20LINK.obj), [cable chain 2](OBJ/CABLE%20CHAIN%20TERMLK.obj) and [cable chain 3](OBJ/CABLE%20CHAIN%20LOCK.obj).
+
+![cable chain](.IMG/C5.jpg)
+
+In addition you need to do a few more mods since home limit switches now are not reachable for the carriges. Linear bearings on the heated bed should be turned upside down, Z-axis limit switch assembly moves 10mm up (see product assembly) and an extension pin added on Y-axis carrige (see product assembly).
+Also remove the X-axis limit switch bolt, you'll no longer need it.
 
 At last you need to make changes in your printer firmware config. Change the maximum coordinate parameters as follows:
 
@@ -68,10 +72,9 @@ At last you need to make changes in your printer firmware config. Change the max
 
 You can still adjust maximum values +/- few millimeters.
 
+## **+ Final product view and assembled weights**
 
-## **+ Finished product view and assembled weights**
-
-|![PIC1](.IMG/P1.jpeg)|![PIC2](.IMG/P2.jpeg)|![PIC3](.IMG/P3.jpeg)|![P4](.IMG/P4.jpeg)|![PIC5](.IMG/P5.jpeg)|![PIC6](.IMG/P6.jpeg)|
-| --- | --- | --- | --- |---|---|
-|![PIC7](.IMG/P7.jpeg)|![P8](.IMG/P8.jpeg)|![PIC9](.IMG/P9.jpeg)|![PIC10](.IMG/P10.jpeg)|![PIC11](.IMG/P11.jpeg)|&nbsp;|
+|![PIC1](.IMG/P1.jpeg)|![PIC2](.IMG/P2.jpeg)|![PIC3](.IMG/P3.jpeg)|![P4](.IMG/P4.jpeg)|![PIC5](.IMG/P5.jpeg)|![PIC6](.IMG/P6.jpeg)|![PIC7](.IMG/P7.jpeg)|
+| --- | --- | --- | --- |---|---|---|
+|![P8](.IMG/P8.jpeg)|![PIC9](.IMG/P9.jpeg)|![PIC10](.IMG/P10.jpeg)|![PIC11](.IMG/P11.jpeg)|![PIC12](.IMG/P12.jpeg)|![PIC12](.IMG/P13.jpeg)|![FlyingBear Ghost 5 Heater Chamber](.IMG/P0.jpg)|
 
