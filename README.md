@@ -1,5 +1,5 @@
 # FlyingBear Ghost 5: Direct Extruder
-| ![WARNING](https://friconix.com/png/fi-ensuxs-warning-solid.png) |The project requires minimal operating skills with electronics, you must have a simple multimeter and soldering iron as well as to be able to use them properly. Everything you do hereinafter is at your own risk. :) |
+| ![WARNING](https://friconix.com/png/fi-ensuxs-warning-solid.png) | The project requires a minimal skills in electronics. Everything you do hereinafter is at your own risk. :) |
 |:---:|:---|
 | ![disclaimer](https://friconix.com/png/fi-cnsuxs-question-mark.png) | **Please refer to [issues](https://github.com/way5/flyingbear-G5-full-direct-extruder/issues) :beetle: if you have any suggestion or found an error.** |
 
@@ -17,8 +17,13 @@
    -  Threaded Stud Bolt M3 - 4 pcs.
 2. Y-axis Limit Switch:
    -  Bolt + Nut + Washer M2 - 1 pcs.
+   -  Thru Threaded Insert M2 - 1 pcs.
    -  Any suitable Coil Spring (see photos) - 1 pcs.
-3. PCB:
+3. Z-axis knob:
+   - Bolt + Nut M3 - 1 pcs.
+<br/>Optional:
+   - Replacement coil spring (~5mm shorter than the stock one) - 1 pcs.
+4. PCB:
    -  SMD LED diode - 1 pcs.
    -  SMD Resistor ≥ 1kOhm - 1 pcs.
    -  SMD Capacitor ~ 10nF - 1 pcs.
@@ -61,16 +66,22 @@ You might like to use a cable chain with your new extruder, so here it is. See [
 In addition you need to do a few more mods since home limit switches now are not reachable for the carriges. Linear bearings on the heated bed should be turned upside down, Z-axis limit switch assembly moves 10mm up (see product assembly) and an extension pin added on Y-axis carrige (see product assembly).
 Also remove the X-axis limit switch bolt, you'll no longer need it.
 
+The opposit side of the cable chain connects to the cable holder standoff. Those may be also used to install top side lights, though this is optional.
+
+![cable standoff](.IMG/P20.jpg)
+
 At last you need to make changes in your printer firmware config. Change the maximum coordinate parameters as follows:
 
-<code><pre>
+```
+
 >X_MIN_POS 0
 >Y_MIN_POS 0
 >Z_MIN_POS 0
 >X_MAX_POS 254
 >Y_MAX_POS 195
 >Z_MAX_POS 210
-</pre></code>
+
+```
 
 You can still adjust maximum values +/- few millimeters.
 
